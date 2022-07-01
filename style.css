@@ -1,0 +1,110 @@
+:root {
+    --darkCyan: hsl(158, 36%, 37%);
+    --mediumGreen: hsl(158, 36%, 32%);
+    --cream: hsl(30, 38%, 92%);
+    --veryDarkBlue: hsl(212, 21%, 14%);
+    --darkGreyishBlue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--cream);
+}
+
+.container {
+    display: relative;
+    height: 100vh;
+}
+
+.card {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: 300px;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+img {
+    display: inline-block;
+    width: 300px;
+    margin-left: -2rem;
+    margin-top: -2rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.cardTitle {
+    margin: .7rem 0;
+    letter-spacing: .2rem;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+h2 {
+    font-family: 'Fraunces', serif;
+    font-size: 28px;
+    margin: .7rem 0;
+    width: 110%;
+}
+
+button {
+    position: relative;
+    top: 10px;
+    width: 100%;
+    height: 35px;
+    background-color: var(--darkCyan);
+    border: none;
+    border-radius: 10px;
+    color: var(--white);
+    font-weight: 700;
+}
+
+button:hover {
+    background-color: var(--mediumGreen);
+    transition: background-color .45s;
+    cursor: pointer;
+}
+
+svg {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    top: 45px;
+    left: 20px;
+    visibility: visible;
+}
+
+p {
+    font-size: 11px;
+    width: 110%;
+    font-weight: 500;
+}
+
+.prices {
+    position: relative;
+    top: 30px;
+}
+
+.discount {
+    font-size: 22px;
+    font-weight: 700;
+    font-family: 'Fraunces', serif;
+    color: var(--darkCyan);
+}
+
+.originalPrice {
+    position: relative;
+    padding: 1rem;
+    bottom: 5px;
+    text-decoration: line-through black;
+}

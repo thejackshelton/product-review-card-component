@@ -19,7 +19,9 @@ body {
 }
 
 .container {
-    display: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 100vh;
 }
 
@@ -32,15 +34,20 @@ body {
     width: 300px;
     padding: 2rem;
     border-radius: 10px;
+    height: 500px;
 }
 
-img {
+.mobileImage {
     display: inline-block;
     width: 300px;
     margin-left: -2rem;
     margin-top: -2rem;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+}
+
+.desktopImage {
+    display: none;
 }
 
 .cardTitle {
@@ -55,6 +62,7 @@ h2 {
     font-size: 28px;
     margin: .7rem 0;
     width: 110%;
+    color: var(--veryDarkBlue)
 }
 
 button {
@@ -75,24 +83,16 @@ button:hover {
     cursor: pointer;
 }
 
-svg {
-    position: relative;
-    width: 32px;
-    height: 32px;
-    top: 45px;
-    left: 20px;
-    visibility: visible;
-}
-
 p {
     font-size: 11px;
     width: 110%;
     font-weight: 500;
+    color: var(--darkGreyishBlue);
 }
 
 .prices {
     position: relative;
-    top: 30px;
+    margin: 30px 0 5px 0;
 }
 
 .discount {
@@ -107,4 +107,78 @@ p {
     padding: 1rem;
     bottom: 5px;
     text-decoration: line-through black;
+}
+
+.cart {
+    position: relative;
+    bottom: 15px;
+    margin-left: 55px;
+    width: 16px;
+    height: 16px;
+}
+
+@media only screen and (min-width: 1440px) {
+    .mobileImage {
+        display: none;
+    }
+
+    .desktopImage {
+        display: inline-block;
+        width: 300px;
+        height: 465px;
+        border-bottom-left-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+
+    .card {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        left: 0;
+        width: 300px;
+        padding: 2rem;
+        border-radius: 10px;
+        height: 465px;
+        transform: translate(0, 0);
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 0;
+    }
+
+    .desktop-card {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    p {
+        font-size: 14px;
+        width: 100%;
+    }
+
+    .perfume {
+        position: relative;
+        top: 20px;
+    }
+
+    .prices {
+        margin: 50px 0 0 0;
+    }
+
+    .discount {
+        font-size: 30px;
+    }
+
+    button {
+        top: 20px;
+        padding: 25px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }

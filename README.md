@@ -34,8 +34,8 @@ Mobile
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa/hub/product-preview-card-component-MM4Y1B3NQa)
-- Live Site URL: [Add live site URL here](https://thejackshelton.github.io/product-review-card-component/)
+- Solution URL: [Front End Mentor](https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa/hub/product-preview-card-component-MM4Y1B3NQa)
+- Live Site URL: [Live Site](https://thejackshelton.github.io/product-review-card-component/)
 
 ## My process
 
